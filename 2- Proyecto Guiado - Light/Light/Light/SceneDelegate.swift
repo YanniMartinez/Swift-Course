@@ -2,7 +2,7 @@
 //  SceneDelegate.swift
 //  Light
 //
-//  Created by ios dev lab fi unam on 07/03/23.
+//  Created by MacBook 28 on 08/03/23.
 //
 
 import UIKit
