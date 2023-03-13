@@ -35,6 +35,29 @@
 
 * Regulador (UISlider): Este es un elemento como una barrita que permite regular el brillo o el volument. Permite la modificacion de valores de una manera mas fluida y natural.
 
-* Interruptor (UISwitch): Como su nombre lo dice son switches
+* Interruptor (UISwitch): Como su nombre lo dice son switches.
+
+    Puedes usar una IBAction para ejecutar un código cuando un interruptor se enciende o se apaga. O puedes verificar si el interruptor está actualmente en la posición de encendido o apagado accediendo al valor isOn desde el parámetro sender o desde un IBOutlet.
+
+    Por ejemplo: Si quisieramos usarlo de una manera sencilla imprimiendo valores en la pantalla podemos tener el siguiente codigo sencillo que nos ayude:
+
+    ```
+    @IBAction func switchToggled(_ sender: UISwitch) {
+        if sender.isOn {
+            print("El interruptor está encendido.")
+        } else {
+            print("El interruptor está apagado.")
+        }
+    }
+    ```
 
 * Selector de fecha(UIDatePicker): Permite selecionar la fecha en un formato de calendario.
+
+* Reguladores: 
+
+* Acciones y conectores: Acciones y conectores
+Puedes crear conectores que permitan a las acciones acceder a las propiedades de tus vistas y controles, incluso si la vista o el control no son el sender (remitente).
+Por ejemplo, puedes crear un conector para una etiqueta que se actualiza con la acción de un botón.
+En los pasos siguientes, cambiarás la función buttonTapped activada al tocar el botón para acceder al estado isOn actual del interruptor y al value (valor) actual del regulador.
+
+* Reconocedores de texto: Busca “gesture” en la biblioteca de objetos para ver la lista completa de reconocedores de gestos disponibles.
